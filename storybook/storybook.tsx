@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import { getStorybookUI, configure } from "@storybook/react-native"
 import SplashScreen from "react-native-splash-screen"
 
-declare var module
+declare const module
 
 configure(() => {
   require("./storybook-registry")

@@ -1,6 +1,6 @@
-import { observable, IObservableValue } from "mobx"
+import { observable, IObservableValue } from 'mobx'
 
-export type StatusType = "idle" | "pending" | "done" | "error"
+export type StatusType = 'idle' | 'pending' | 'done' | 'error'
 
 /**
  * Adds a status field to the model often for tracking api access.
@@ -24,31 +24,31 @@ export type StatusType = "idle" | "pending" | "done" | "error"
  *   .setStatus("done") // change the status and trigger an mst action
  */
 export const withStatus = () => {
-  /**
-   * The observable backing store for the status field.
-   */
-  const status: IObservableValue<string> = observable.box("idle")
+	/**
+	 * The observable backing store for the status field.
+	 */
+	const status: IObservableValue<string> = observable.box('idle')
 
-  return {
-    views: {
-      // a getter
-      get status() {
-        return status.get() as StatusType
-      },
-      // as setter
-      set status(value: StatusType) {
-        status.set(value)
-      },
-    },
-    actions: {
-      /**
-       * Set the status to something new.
-       *
-       * @param value The new status.
-       */
-      setStatus(value: StatusType) {
-        status.set(value)
-      },
-    },
-  }
+	return {
+		views: {
+			// a getter
+			get status() {
+				return status.get() as StatusType
+			},
+			// as setter
+			set status(value: StatusType) {
+				status.set(value)
+			},
+		},
+		actions: {
+			/**
+			 * Set the status to something new.
+			 *
+			 * @param value The new status.
+			 */
+			setStatus(value: StatusType) {
+				status.set(value)
+			},
+		},
+	}
 }

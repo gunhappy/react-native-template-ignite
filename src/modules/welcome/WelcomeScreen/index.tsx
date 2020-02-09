@@ -8,14 +8,8 @@ import {
 	SafeAreaView,
 } from 'react-native'
 import { NavigationInjectedProps } from 'react-navigation'
-import {
-	Button,
-	Header,
-	Screen,
-	Text,
-	Wallpaper,
-} from '../../../common/components'
-import { color, spacing } from '../../../../app/theme'
+import { Button, Header, Screen, Text, Wallpaper } from 'common/components'
+import { color, spacing } from 'common/theme'
 const bowserLogo = require('./bowser.png')
 
 const FULL: ViewStyle = { flex: 1 }
@@ -89,7 +83,7 @@ const FOOTER_CONTENT: ViewStyle = {
 
 export type WelcomeScreenProps = NavigationInjectedProps<{}>
 
-export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props => {
+const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props => {
 	const nextScreen = React.useMemo(
 		() => () => props.navigation.navigate('demo'),
 		[props.navigation],
@@ -139,3 +133,5 @@ export const WelcomeScreen: React.FunctionComponent<WelcomeScreenProps> = props 
 		</View>
 	)
 }
+
+export default WelcomeScreen

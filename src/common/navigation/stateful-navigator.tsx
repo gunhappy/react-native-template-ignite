@@ -6,7 +6,7 @@ import {
 	NavigationScreenProp,
 	NavigationState,
 } from 'react-navigation'
-import { useStores } from '../models/root-store'
+import { useStores } from 'common/models/root-store'
 import { RootNavigator } from './root-navigator'
 
 let currentNavigation: NavigationScreenProp<NavigationState> | undefined

@@ -15,10 +15,10 @@ import {
 	Text,
 	Screen,
 	Wallpaper,
-} from '../../../common/components'
-import { color, spacing } from '../../../../app/theme'
-import { Api } from '../../../../app/services/api'
-import { save } from '../../../common/utils/storage'
+} from 'common/components'
+import { color, spacing } from 'common/theme'
+import { Api } from 'core/services/api'
+import { save } from 'common/utils/storage'
 export const logoIgnite = require('./logo-ignite.png')
 export const heart = require('./heart.png')
 
@@ -92,15 +92,15 @@ const HINT: TextStyle = {
 
 export type DemoScreenProps = NavigationInjectedProps<{}>
 
-export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
+const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
 	const goBack = React.useMemo(() => () => props.navigation.goBack(null), [
 		props.navigation,
 	])
 
 	const demoReactotron = React.useMemo(
 		() => async () => {
-			console.tron.log('Your Friendly tron log message')
-			console.tron.logImportant('I am important')
+			console.tron.log?.('Your Friendly tron log message')
+			console.tron.logImportant?.('I am important')
 			console.tron.display({
 				name: 'DISPLAY',
 				value: {
@@ -175,3 +175,5 @@ export const DemoScreen: React.FunctionComponent<DemoScreenProps> = props => {
 		</View>
 	)
 }
+
+export default DemoScreen

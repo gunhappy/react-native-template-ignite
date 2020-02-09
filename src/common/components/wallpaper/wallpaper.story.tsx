@@ -1,6 +1,6 @@
-import * as React from 'react'
+import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { StoryScreen, Story, UseCase } from 'src/core/storybook/views'
+import { StoryScreen, Story, UseCase } from 'core/storybook/views'
 import { Wallpaper } from './wallpaper'
 
 declare let module

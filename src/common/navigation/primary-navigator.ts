@@ -1,6 +1,6 @@
 import createNativeStackNavigator from 'react-native-screens/createNativeStackNavigator'
-import DemoScreen from 'src/modules/demo/DemoScreen'
-import WelcomeScreen from 'src/modules/welcome/WelcomeScreen'
+import DemoScreen from 'modules/demo/DemoScreen'
+import WelcomeScreen from 'modules/welcome/WelcomeScreen'
 
 export const PrimaryNavigator = createNativeStackNavigator(
 	{

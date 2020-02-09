@@ -1,6 +1,6 @@
-import * as React from 'react'
+import React from 'react'
 import { View, ViewStyle, ImageStyle, TextStyle } from 'react-native'
-import { Text, Icon } from '..'
+import { Text, Icon } from '../'
 import { spacing } from 'common/theme'
 
 const BULLET_ITEM: ViewStyle = {

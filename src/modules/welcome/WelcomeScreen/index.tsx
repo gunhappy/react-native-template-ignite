@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import {
 	View,
 	Image,
@@ -8,7 +8,8 @@ import {
 	SafeAreaView,
 } from 'react-native'
 import { NavigationInjectedProps } from 'react-navigation'
-import { Button, Header, Screen, Text, Wallpaper } from 'common/components'
+import { Button, Screen, Text, Wallpaper } from 'common/components'
+import { Header } from 'common/components/header'
 import { color, spacing } from 'common/theme'
 const bowserLogo = require('./bowser.png')
 

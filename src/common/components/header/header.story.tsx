@@ -1,8 +1,8 @@
-import * as React from 'react'
+import React from 'react'
 import { View, Alert } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
-import { StoryScreen, Story, UseCase } from 'src/core/storybook/views'
-import { Header } from './header'
+import { StoryScreen, Story, UseCase } from 'core/storybook/views'
+import { Header } from '.'
 import { color } from 'common/theme'
 
 declare let module

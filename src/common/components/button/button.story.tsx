@@ -1,7 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import { ViewStyle, TextStyle, Alert } from 'react-native'
 import { storiesOf } from '@storybook/react-native'
-import { StoryScreen, Story, UseCase } from 'src/core/storybook/views'
+import { StoryScreen, Story, UseCase } from 'core/storybook/views'
 import { Button } from './button'
 
 declare let module

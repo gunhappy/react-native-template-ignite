@@ -5,6 +5,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "dev": "react-native start",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint index.js app --fix --ext .js,.ts,.tsx",
@@ -70,6 +71,7 @@
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "babel-jest": "^25.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "detox": "^14.0.1",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",

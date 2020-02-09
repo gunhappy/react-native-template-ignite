@@ -1,7 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import { View, ViewStyle, TextStyle } from 'react-native'
 import { HeaderProps } from './header.props'
-import { Button, Icon, Text } from '..'
+import { Button, Icon, Text } from '../'
 import { spacing } from 'common/theme'
 import { translate } from 'core/i18n'
 

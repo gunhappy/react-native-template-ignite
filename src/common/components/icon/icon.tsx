@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { View, Image, ImageStyle } from 'react-native'
 import { IconProps } from './icon.props'
 import { icons } from './icons'

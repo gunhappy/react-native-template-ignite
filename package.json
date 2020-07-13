@@ -100,7 +100,7 @@
     "react-test-renderer": "16.9.0",
     "rimraf": "2.6.3",
     "solidarity": "2.3.1",
-    "standard-version": "^7.1.0",
+    "standard-version": "^8.0.1",
     "typescript": "^3.7.5"
   },
   "detox": {
